@@ -4,7 +4,7 @@ import ReactDom from 'react-dom';
 class Counter extends Component {
 
     render() { 
-        return (  );
+        return ( <h1> Hello World </h1> );
     }
 }
  
