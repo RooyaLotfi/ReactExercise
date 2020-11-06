@@ -7,8 +7,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Counter from './component/counter'; // counter is a default export so we do not need curly braces around it. 
 
 // the following lines are where we are rendering a react component
+// here we are trying to render counter component into dom 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.StrictMode> 
     <Counter />
     <Counter />
     <Counter />
