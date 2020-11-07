@@ -11,8 +11,6 @@ import Counter from './component/counter'; // counter is a default export so we 
 ReactDOM.render(
   <React.StrictMode> 
     <Counter />
-    <Counter />
-    <Counter />
   </React.StrictMode>,
   document.getElementById('root')
 ); // this line says what do you want to render (<Counter/>) and where you want to render it? document.getElementById('root')
