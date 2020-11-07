@@ -8,7 +8,8 @@ class Counter extends Component {
     // here state has a property called count and we set it to zero
     // so this state object includes any data this component needs
     state = {
-        count:0
+        count:0,
+        imgURL: 'https://picsum.photos/200'
     };
 
     style = {
@@ -23,7 +24,8 @@ class Counter extends Component {
         return (
         <React.Fragment>
         <h1> Hello World</h1> 
-            
+        <img src = {this.state.imgURL} alt =""/>
+
         <span>{this.state.count}</span>
         <h1>rendering by calling a function:</h1>
         <span>{this.formatCount()}</span>
