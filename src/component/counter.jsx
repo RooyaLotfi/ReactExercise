@@ -8,7 +8,7 @@ class Counter extends Component {
     // here state has a property called count and we set it to zero
     // so this state object includes any data this component needs
     state = {
-        count:0
+        count:1
     };
 
     // in this span element we want to render something dynamically: between curly braces you can add any valid javascript expressions if //
@@ -19,9 +19,14 @@ class Counter extends Component {
         <h1> Hello World</h1> 
             
         <span>{this.state.count}</span>
+        <span>{this.formatCount()}</span>
         <h2>how are you</h2>
         </React.Fragment>
         );
+    }
+
+    formatCount(){
+        return this.state.count === 0 ? 'zero': this.state.count;
     }
 }
 
