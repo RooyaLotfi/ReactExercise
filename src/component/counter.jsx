@@ -21,7 +21,7 @@ class Counter extends Component {
         <span>{this.state.count}</span>
         <h1>rendering by calling a function:</h1>
         <span>{this.formatCount()}</span>
-        <button>increment</button>
+        <button>incremgent</button>
         <h2>how are you</h2>
         </React.Fragment>
         );
@@ -30,7 +30,8 @@ class Counter extends Component {
     formatCount(){
         // since this.state.count has been repeated a couple of times we can use object destructuring:
         const {count} = this.state; // this means count = this.state.count
-        return count === 0 ? 'zero': count++;
+        const value = <h1>zero</h1>;
+        return count === 0 ? value: count;
     }
 }
 
