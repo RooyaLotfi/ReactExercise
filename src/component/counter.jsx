@@ -11,6 +11,12 @@ class Counter extends Component {
         count:0
     };
 
+    style = {
+        fontSize : 50,
+        fontWeight: 10
+    };
+    
+
     // in this span element we want to render something dynamically: between curly braces you can add any valid javascript expressions if //
     //we want to render the value of count property. An expression is something that produces some values //
     render() { 
@@ -23,6 +29,7 @@ class Counter extends Component {
         <span>{this.formatCount()}</span>
         <button>incremgent</button>
         <h2>how are you</h2>
+        <button style = {this.style}>this is a button with a new style</button>
         </React.Fragment>
         );
     }
@@ -30,7 +37,7 @@ class Counter extends Component {
     formatCount(){
         // since this.state.count has been repeated a couple of times we can use object destructuring:
         const {count} = this.state; // this means count = this.state.count
-        const value = <h1>zero</h1>;
+        const value = <h3>zero</h3>;
         return count === 0 ? value: count;
     }
 }
